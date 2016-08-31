@@ -7,7 +7,8 @@
   "permissions": [ "webNavigation", "*://*/*" ],
   "content_scripts": [
       {
-        "matches": ["*://*/*"],
+        "matches": ["*://*.schoolloop.com/*"],
+        "run_at": "document_start",
         "js": ["jquery-1.12.0.min.js", "lel.js"]
       }
   ]
