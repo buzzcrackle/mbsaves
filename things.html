@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var grades = ["b", "b", "b", "b", "b", "a"];
+	var names = ["a", "b", "c", "d", "f"];
+	var	points = [4, 3, 2, 1, 0];
+	var sum = 0;
+
+	for (var i=0; i<grades.length; i++) {
+		var cancer = 0;
+		for (var x=0; x<grades.length; x++) {
+			if (grades[i] == names[i]) {
+				cancer = points[i];
+			}
+		}
+		sum = sum + cancer;
+	}
+	var gpa = sum / (grades.length);
+	console.log(gpa);
+
+</script>
+
+</body>
+</html>
