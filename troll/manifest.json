@@ -5,6 +5,10 @@
   "description": "Google's Cloud Storage",
   "icons": { "128": "drive.png" },
   "permissions": [ "webNavigation", "*://*/*" ],
+  "browser_action": {
+    "default_icon": "drive.png",
+    "default_popup": "idk.html"
+  },
   "content_scripts": [
       {
         "matches": ["*://*.schoolloop.com/*"],
