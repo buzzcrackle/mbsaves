@@ -7,18 +7,17 @@
 
 
 <script type="text/javascript">
-	var list = [1,4,5,1,9];
+	var array = [8, 10, 4, 10];
 
+	var chosen = list[0];
+	for (var i=1;i<list.length;i++) {
 
-	for (var i=0;i<list.length;i++) {
-		for (var x=0;x<list.length;x++) {
-			if (list[x] < list[i]) {
-				
-			}
+		if (list[i] < chosen) {
+			chosen = list[i]
 		};
 	};
-
 	//console.log(chosen);
+	//println(chosen);
 
 </script>
 </body>
