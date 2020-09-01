@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Chegg Question ID",
+  "version": "1.0",
+  "description": "Copies Question ID to clipboard upon page load",
+  "permissions": [ "webNavigation", "*://*.chegg.com/*" ],
+  "icons": {                   
+    "19": "chegg19.png",
+    "38": "chegg38.png",
+    "48": "chegg48.png",
+    "128": "chegg128.png"  
+  },    
+  "browser_action": {
+    "default_icon": {                   
+      "19": "chegg19.png",
+      "38": "chegg38.png",
+      "48": "chegg48.png",
+      "128": "chegg128.png"        
+    }
+  },
+  "content_scripts": [
+      {
+        "matches": ["*://*.chegg.com/*"],
+        "run_at": "document_start",
+        "js": ["jquery-1.12.0.min.js", "content.js"]
+      }
+  ]
+}
